@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<!-- saved from url=(0194)file:///C:/Users/tanis/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/B4C23CA0CC1FAB1C5AB296BDD2F6E1EE2FF1D931/transfers/2026-16/hypothesis_testing_modern.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="slides-format" content="viewport">
+  <title>Hypothesis Testing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Hypothesis Testing final ! pls_files/css2" rel="stylesheet">
+  <script src="./Hypothesis Testing final ! pls_files/browser@4"></script><style>/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --tracking-tight: -0.025em;
+    --tracking-wide: 0.025em;
+    --leading-relaxed: 1.625;
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-text: #f5f3ff;
+    --color-text-secondary: #ddd6fe;
+    --color-text-muted: #b7b4d9;
+    --color-accent-1: #7C3AED;
+    --color-accent-2: #06B6D4;
+    --color-accent-3: #A78BFA;
+    --font-display: 'Instrument Serif', Georgia, serif;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .ml-6 {
+    margin-left: calc(var(--spacing) * 6);
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-\[180px\] {
+    height: 180px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[180px\] {
+    width: 180px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-\[860px\] {
+    max-width: 860px;
+  }
+  .max-w-\[920px\] {
+    max-width: 920px;
+  }
+  .-rotate-90 {
+    rotate: calc(90deg * -1);
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-\[1\.5fr_\.95fr\] {
+    grid-template-columns: 1.5fr .95fr;
+  }
+  .grid-cols-\[160px_1fr_90px\] {
+    grid-template-columns: 160px 1fr 90px;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .items-stretch {
+    align-items: stretch;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-linear-to-br {
+    --tw-gradient-position: to bottom right;
+    @supports (background-image: linear-gradient(in lab, red, red)) {
+      --tw-gradient-position: to bottom right in oklab;
+    }
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-linear-to-r {
+    --tw-gradient-position: to right;
+    @supports (background-image: linear-gradient(in lab, red, red)) {
+      --tw-gradient-position: to right in oklab;
+    }
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-accent-1 {
+    --tw-gradient-from: var(--color-accent-1);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-accent-3 {
+    --tw-gradient-from: var(--color-accent-3);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-accent-2 {
+    --tw-gradient-via: var(--color-accent-2);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-accent-1 {
+    --tw-gradient-to: var(--color-accent-1);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-accent-2 {
+    --tw-gradient-to: var(--color-accent-2);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-clip-text {
+    background-clip: text;
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[1\.05rem\] {
+    font-size: 1.05rem;
+  }
+  .text-\[1rem\] {
+    font-size: 1rem;
+  }
+  .text-\[100px\] {
+    font-size: 100px;
+  }
+  .text-\[110px\] {
+    font-size: 110px;
+  }
+  .text-\[150px\] {
+    font-size: 150px;
+  }
+  .text-\[clamp\(1rem\,1\.8vw\,1\.3rem\)\] {
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+  }
+  .text-\[clamp\(1rem\,1\.8vw\,1\.25rem\)\] {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+  }
+  .text-\[clamp\(1rem\,1\.8vw\,1\.35rem\)\] {
+    font-size: clamp(1rem, 1.8vw, 1.35rem);
+  }
+  .text-\[clamp\(2\.6rem\,6vw\,4\.6rem\)\] {
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+  }
+  .text-\[clamp\(2\.6rem\,6vw\,4\.7rem\)\] {
+    font-size: clamp(2.6rem, 6vw, 4.7rem);
+  }
+  .text-\[clamp\(2rem\,4\.3vw\,3\.1rem\)\] {
+    font-size: clamp(2rem, 4.3vw, 3.1rem);
+  }
+  .text-\[clamp\(2rem\,4\.3vw\,3\.2rem\)\] {
+    font-size: clamp(2rem, 4.3vw, 3.2rem);
+  }
+  .text-\[clamp\(2rem\,4\.4vw\,3\.2rem\)\] {
+    font-size: clamp(2rem, 4.4vw, 3.2rem);
+  }
+  .text-\[clamp\(2rem\,4\.4vw\,3\.15rem\)\] {
+    font-size: clamp(2rem, 4.4vw, 3.15rem);
+  }
+  .text-\[clamp\(2rem\,4\.6vw\,3\.4rem\)\] {
+    font-size: clamp(2rem, 4.6vw, 3.4rem);
+  }
+  .text-\[clamp\(3rem\,7vw\,5\.6rem\)\] {
+    font-size: clamp(3rem, 7vw, 5.6rem);
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[0\.2em\] {
+    --tw-tracking: 0.2em;
+    letter-spacing: 0.2em;
+  }
+  .tracking-\[0\.22em\] {
+    --tw-tracking: 0.22em;
+    letter-spacing: 0.22em;
+  }
+  .tracking-\[0\.35em\] {
+    --tw-tracking: 0.35em;
+    letter-spacing: 0.35em;
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .text-accent-2 {
+    color: var(--color-accent-2);
+  }
+  .text-text {
+    color: var(--color-text);
+  }
+  .text-text-muted {
+    color: var(--color-text-muted);
+  }
+  .text-text-secondary {
+    color: var(--color-text-secondary);
+  }
+  .text-transparent {
+    color: transparent;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .md\:text-\[128px\] {
+    @media (width >= 48rem) {
+      font-size: 128px;
+    }
+  }
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+    }
+  }
+}
+</style>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-bg: #0f0a2a;
+      --color-bg-deep: #0a192f;
+      --color-surface: #161033;
+      --color-text: #f5f3ff;
+      --color-text-secondary: #ddd6fe;
+      --color-text-muted: #b7b4d9;
+      --color-accent-1: #7C3AED;
+      --color-accent-2: #06B6D4;
+      --color-accent-3: #A78BFA;
+      --color-glass-bg: rgba(255,255,255,0.06);
+      --color-glass-border: rgba(255,255,255,0.10);
+      --color-vignette: rgba(0,0,0,0.42);
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Inter', sans-serif;
+    }
+  </style>
+  <style>
+    :root { --color-bg: #0f0a2a; --color-text: #f5f3ff; --glow-color-rgb: 124,58,237; --glass: rgba(255,255,255,0.06); --glass-border: rgba(255,255,255,0.10); }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { background: var(--color-bg); margin: 0; }
+    body { font-family: var(--font-body); color: var(--color-text); overflow: hidden; height: 100vh; width: 100vw; }
+    .deck { width: 100vw; height: 100vh; position: relative; }
+    .slide { position: absolute; inset: 0; background: linear-gradient(135deg, #0f0a2a 0%, #0a192f 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transform: scale(0.95); transition: opacity 0.7s ease, transform 0.7s ease; pointer-events: none; overflow: hidden; }
+    .slide.active { opacity: 1; transform: scale(1); pointer-events: all; }
+    .slide > .content { position: relative; z-index: 2; width: 100%; max-width: 1160px; padding: clamp(1.4rem, 3.5vw, 3.2rem); }
+    .nav-controls { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; z-index: 100; background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); padding: 10px 22px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 18px 50px rgba(0,0,0,0.28); }
+    .nav-btn { width: 40px; height: 40px; border: none; background: rgba(255,255,255,0.08); color: #c4b5fd; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform .25s ease, background .25s ease; }
+    .nav-btn:hover { background: rgba(255,255,255,0.14); transform: translateY(-1px); }
+    .slide-dots { display: flex; gap: 8px; }
+    .slide-dots .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.18); cursor: pointer; transition: background .25s ease, transform .25s ease; }
+    .slide-dots .dot.active { background: #06B6D4; transform: scale(1.25); }
+    .slide-counter { font-size: .82rem; color: #d8d2ff; min-width: 44px; text-align: center; }
+    .reveal { opacity: 0; transform: translateY(20px); }
+
+    .text-glow { text-shadow: 0 0 20px rgba(var(--glow-color-rgb), .45), 0 0 42px rgba(6,182,212,.18); }
+    .stat-glow { text-shadow: 0 0 24px rgba(var(--glow-color-rgb), .6), 0 0 54px rgba(6,182,212,.18); }
+    @keyframes glow-pulse { 0%,100%{ text-shadow:0 0 18px rgba(var(--glow-color-rgb),.45),0 0 42px rgba(6,182,212,.15);} 50%{ text-shadow:0 0 34px rgba(var(--glow-color-rgb),.85),0 0 66px rgba(6,182,212,.25);} }
+    .glow-pulse { animation: glow-pulse 3.2s ease-in-out infinite; }
+    @keyframes float-slow { 0%{transform:translate(0,0) scale(1)} 25%{transform:translate(50px,-40px) scale(1.1)} 50%{transform:translate(-35px,35px) scale(.92)} 75%{transform:translate(40px,16px) scale(1.05)} 100%{transform:translate(0,0) scale(1)} }
+    @keyframes float-drift { 0%{transform:translate(0,0) scale(1) rotate(0deg)} 33%{transform:translate(-44px,-54px) scale(1.12) rotate(4deg)} 66%{transform:translate(34px,28px) scale(.9) rotate(-3deg)} 100%{transform:translate(0,0) scale(1) rotate(0deg)} }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+    .gradient-mesh { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(90px); animation: float-slow 12s ease-in-out infinite; }
+    .blob:nth-child(2) { animation: float-drift 15s ease-in-out infinite; }
+    .blob:nth-child(3) { animation: float-slow 18s ease-in-out infinite reverse; }
+    .blob:nth-child(4) { animation: float-drift 20s ease-in-out infinite reverse; }
+    .slide::before { content:''; position:absolute; inset:0; z-index:1; pointer-events:none; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E"); background-repeat:repeat; background-size:256px 256px; opacity:.035; mix-blend-mode:overlay; }
+    .slide::after { content:''; position:absolute; inset:0; z-index:1; pointer-events:none; background: radial-gradient(ellipse at center, transparent 48%, rgba(0,0,0,.42) 100%); }
+    .glass-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); backdrop-filter: blur(12px); box-shadow: 0 18px 60px rgba(8,10,30,0.28); border-radius: 24px; }
+    .hover-lift { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+    .hover-lift:hover { transform: translateY(-6px); box-shadow: 0 20px 65px rgba(12,18,55,.34); border-color: rgba(167,139,250,.28); }
+    .deco-shape { position: absolute; border-radius: 999px; pointer-events: none; z-index: 1; opacity: .14; filter: blur(4px); will-change: transform; }
+    .bar-track { width: 100%; height: 18px; border-radius: 999px; overflow: hidden; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08); }
+    .bar-fill { height: 100%; width: 0%; border-radius: 999px; background: linear-gradient(90deg, #7C3AED, #06B6D4); box-shadow: 0 0 24px rgba(6,182,212,.35); }
+    .donut-wrap { display:flex; align-items:center; justify-content:center; }
+    .donut-ring { stroke-dasharray: 251.3; stroke-dashoffset: 251.3; stroke-linecap: round; }
+    .spot-ring { position:absolute; inset:auto; border-radius:50%; border:1px solid rgba(255,255,255,.08); }
+    .formula { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1rem; color:#e9e5ff; background: rgba(8, 12, 30, 0.42); border:1px solid rgba(255,255,255,.08); padding: .9rem 1rem; border-radius: 16px; }
+    .chip { padding:.55rem .9rem; border-radius:999px; background: rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.11); color:#efe9ff; font-size:.95rem; }
+    .emoji-float { animation: float 3.2s ease-in-out infinite; }
+    .card-accent-violet { border-left: 4px solid #7C3AED; }
+    .card-accent-cyan { border-left: 4px solid #06B6D4; }
+    .card-accent-purple { border-left: 4px solid #A78BFA; }
+    .mini-label { letter-spacing: .18em; text-transform: uppercase; color:#b7b4d9; font-size:.8rem; }
+    .mouse-spotlight { position:fixed; inset:0; z-index:99; pointer-events:none; }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: .01ms !important; transition-duration: .2s !important; } }
+  </style>
+</head>
+<body>
+<div class="mouse-spotlight" style="background: radial-gradient(560px at 273px 766px, rgba(124, 58, 237, 0.08), transparent 40%);"></div>
+<div class="deck">
+  <section class="slide slide-1 active" data-slide="1">
+    <div class="gradient-mesh">
+      <div class="blob" style="width:520px;height:520px;top:-120px;right:-120px;background:#7C3AED;opacity:.16"></div>
+      <div class="blob" style="width:340px;height:340px;bottom:-80px;left:-70px;background:#06B6D4;opacity:.12"></div>
+      <div class="blob" style="width:240px;height:240px;top:36%;left:18%;background:#A78BFA;opacity:.12"></div>
+    </div>
+    <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1" width="300" height="150"></canvas>
+    <div class="content text-center">
+      <div class="reveal text-[110px] md:text-[128px] mb-4 emoji-float" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">📊</div>
+      <h1 class="reveal font-display text-[clamp(3rem,7vw,5.6rem)] leading-none tracking-tight bg-linear-to-r from-accent-3 via-accent-2 to-accent-1 bg-clip-text text-transparent mb-5" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">Hypothesis Testing</h1>
+      <p class="reveal text-[clamp(1rem,1.8vw,1.35rem)] text-text-muted tracking-[0.35em] uppercase" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);">Core Statistical Concepts · Decision Rules · Test Types</p>
+    </div>
+  </section>
+
+  <section class="slide slide-2" data-slide="2">
+    <div class="gradient-mesh">
+      <div class="blob" style="width:360px;height:360px;top:-70px;right:-80px;background:#7C3AED;opacity:.08"></div>
+      <div class="blob" style="width:260px;height:260px;bottom:-60px;left:-30px;background:#06B6D4;opacity:.07"></div>
+    </div>
+    <div class="deco-shape" data-speed="0.03" style="width: 220px; height: 220px; top: 12%; right: 12%; background: radial-gradient(circle, rgb(124, 58, 237), transparent 70%); transform: translate(-1.27215px, 2.10667px);"></div>
+    <div class="deco-shape" data-speed="0.05" style="width: 160px; height: 160px; bottom: 14%; left: 10%; background: radial-gradient(circle, rgb(6, 182, 212), transparent 70%); transform: translate(-2.12025px, 3.51111px);"></div>
+    <div class="content">
+      <p class="reveal mini-label mb-3" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Agenda</p>
+      <h2 class="reveal font-display text-[clamp(2rem,4.6vw,3.4rem)] mb-8" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">What We'll Cover</h2>
+      <div class="grid grid-cols-2 gap-5">
+        <div class="reveal glass-card hover-lift p-5 flex gap-4 items-start" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);"><div class="w-11 h-11 rounded-full bg-linear-to-br from-accent-1 to-accent-2 flex items-center justify-center font-bold">01</div><div><h3 class="text-lg font-semibold text-text">Hypothesis Testing &amp; Types</h3><p class="text-sm text-text-muted">H₀, H₁, null vs alternative</p></div></div>
+        <div class="reveal glass-card hover-lift p-5 flex gap-4 items-start" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);"><div class="w-11 h-11 rounded-full bg-linear-to-br from-accent-1 to-accent-2 flex items-center justify-center font-bold">02</div><div><h3 class="text-lg font-semibold text-text">Level of Significance</h3><p class="text-sm text-text-muted">α = 0.05, 0.01, p-value rule</p></div></div>
+        <div class="reveal glass-card hover-lift p-5 flex gap-4 items-start" style="transition: opacity 0.38s 0.32s, transform 0.38s 0.32s; opacity: 1; transform: translateY(0px);"><div class="w-11 h-11 rounded-full bg-linear-to-br from-accent-1 to-accent-2 flex items-center justify-center font-bold">03</div><div><h3 class="text-lg font-semibold text-text">One-Tail &amp; Two-Tail</h3><p class="text-sm text-text-muted">Directional vs non-directional</p></div></div>
+        <div class="reveal glass-card hover-lift p-5 flex gap-4 items-start" style="transition: opacity 0.38s 0.4s, transform 0.38s 0.4s; opacity: 1; transform: translateY(0px);"><div class="w-11 h-11 rounded-full bg-linear-to-br from-accent-1 to-accent-2 flex items-center justify-center font-bold">04</div><div><h3 class="text-lg font-semibold text-text">Type I &amp; Type II Errors</h3><p class="text-sm text-text-muted">False positive vs false negative</p></div></div>
+        <div class="reveal glass-card hover-lift p-5 flex gap-4 items-start" style="transition: opacity 0.38s 0.48s, transform 0.38s 0.48s; opacity: 1; transform: translateY(0px);"><div class="w-11 h-11 rounded-full bg-linear-to-br from-accent-1 to-accent-2 flex items-center justify-center font-bold">05</div><div><h3 class="text-lg font-semibold text-text">Z-Test &amp; T-Test</h3><p class="text-sm text-text-muted">Known σ vs unknown σ</p></div></div>
+        <div class="reveal glass-card hover-lift p-5 flex gap-4 items-start" style="transition: opacity 0.38s 0.56s, transform 0.38s 0.56s; opacity: 1; transform: translateY(0px);"><div class="w-11 h-11 rounded-full bg-linear-to-br from-accent-1 to-accent-2 flex items-center justify-center font-bold">06</div><div><h3 class="text-lg font-semibold text-text">One-Sample &amp; Two-Sample</h3><p class="text-sm text-text-muted">Benchmark vs group comparison</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-3" data-slide="3">
+    <div class="gradient-mesh"><div class="blob" style="width:340px;height:340px;top:-90px;right:-80px;background:#7C3AED;opacity:.09"></div><div class="blob" style="width:240px;height:240px;bottom:-40px;left:-30px;background:#06B6D4;opacity:.07"></div></div>
+    <div class="deco-shape" data-speed="0.04" style="width: 180px; height: 180px; top: 18%; left: 52%; background: radial-gradient(circle, rgb(167, 139, 250), transparent 70%); transform: translate(-1.6962px, 2.80889px);"></div>
+    <div class="content grid grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="reveal mini-label mb-3" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Fundamentals</p>
+        <h2 class="reveal font-display text-[clamp(2rem,4.4vw,3.2rem)] mb-4" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">Hypothesis Testing &amp; Types</h2>
+        <p class="reveal text-xl text-text-secondary mb-5" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);">A structured method to evaluate claims about a population using sample data.</p>
+        <ul class="space-y-3 text-[1.05rem] text-text-secondary">
+          <li class="reveal" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);">H₀ = Null hypothesis — Our Assumption</li>
+          <li class="reveal" style="transition: opacity 0.38s 0.32s, transform 0.38s 0.32s; opacity: 1; transform: translateY(0px);">H₁ = Alternative — Inverse of H₀</li>
+          <li class="reveal" style="transition: opacity 0.38s 0.4s, transform 0.38s 0.4s; opacity: 1; transform: translateY(0px);"></li>
+          <li class="reveal" style="transition: opacity 0.38s 0.48s, transform 0.38s 0.48s; opacity: 1; transform: translateY(0px);"></li>
+          <li class="reveal" style="transition: opacity 0.38s 0.56s, transform 0.38s 0.56s; opacity: 1; transform: translateY(0px);"></li>
+        </ul>
+      </div>
+      <div class="reveal flex items-center justify-center" style="transition: opacity 0.38s 0.64s, transform 0.38s 0.64s; opacity: 1; transform: translateY(0px);">
+        <div class="glass-card hover-lift w-[90%] h-[400px] flex flex-col items-center justify-center text-center">
+          <div class="text-[150px] emoji-float">🔬</div>
+          <p class="text-text-muted tracking-[0.22em] uppercase text-sm">Evidence from sample to decision</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-4" data-slide="4">
+    <div class="gradient-mesh"><div class="blob" style="width:380px;height:380px;top:-120px;left:-80px;background:#06B6D4;opacity:.08"></div><div class="blob" style="width:260px;height:260px;bottom:-60px;right:-40px;background:#7C3AED;opacity:.08"></div></div>
+    <div class="deco-shape" data-speed="0.025" style="width: 190px; height: 190px; top: 15%; right: 18%; background: radial-gradient(circle, rgb(6, 182, 212), transparent 70%); transform: translate(-1.06013px, 1.75556px);"></div>
+    <div class="content">
+      <p class="reveal mini-label mb-3" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Decision Threshold</p>
+      <h2 class="reveal font-display text-[clamp(2rem,4.3vw,3.2rem)] mb-6" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">Level of Significance (α)</h2>
+      <div class="grid grid-cols-3 gap-5 mb-8">
+        <div class="reveal glass-card hover-lift p-6 text-center" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);"><div class="text-5xl font-black stat-glow glow-pulse">α</div><p class="mt-3 font-semibold">Max Type I error risk</p><p class="text-sm text-text-muted mt-2">Pre-set before testing</p></div>
+        <div class="reveal glass-card hover-lift p-6 text-center" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);"><div class="text-5xl font-black stat-glow glow-pulse">0.05</div><p class="mt-3 font-semibold">Standard significance level</p><p class="text-sm text-text-muted mt-2">Used in 95% confidence settings</p></div>
+        <div class="reveal glass-card hover-lift p-6 text-center" style="transition: opacity 0.38s 0.32s, transform 0.38s 0.32s; opacity: 1; transform: translateY(0px);"><div class="text-5xl font-black stat-glow glow-pulse">0.01</div><p class="mt-3 font-semibold">Strict significance level</p><p class="text-sm text-text-muted mt-2">Medical / scientific research</p></div>
+      </div>
+      <div class="glass-card p-6 reveal" style="transition: opacity 0.38s 0.4s, transform 0.38s 0.4s; opacity: 1; transform: translateY(0px);">
+        <div class="grid grid-cols-[160px_1fr_90px] gap-4 items-center mb-4"><div class="text-text-secondary font-medium">α = 0.10</div><div class="bar-track"><div class="bar-fill" data-width="100" style="width: 100%; transition: width 0.55s;"></div></div><div class="text-sm text-text-muted">Lenient</div></div>
+        <div class="grid grid-cols-[160px_1fr_90px] gap-4 items-center mb-4"><div class="text-text-secondary font-medium">α = 0.05</div><div class="bar-track"><div class="bar-fill" data-width="50" style="width: 50%; transition: width 0.55s 0.08s;"></div></div><div class="text-sm text-text-muted">Standard</div></div>
+        <div class="grid grid-cols-[160px_1fr_90px] gap-4 items-center mb-5"><div class="text-text-secondary font-medium">α = 0.01</div><div class="bar-track"><div class="bar-fill" data-width="10" style="width: 10%; transition: width 0.55s 0.16s;"></div></div><div class="text-sm text-text-muted">Strict</div></div>
+        <div class="pt-4 border-t border-white/10 text-center text-[1rem] text-text-secondary"><span class="text-accent-2 font-semibold">Decision rule:</span> if p-value ≤ α → reject H₀ · if p-value &gt; α → fail to reject</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-5" data-slide="5">
+    <div class="gradient-mesh"><div class="blob" style="width:330px;height:330px;top:-60px;right:-70px;background:#A78BFA;opacity:.09"></div><div class="blob" style="width:250px;height:250px;bottom:-50px;left:-20px;background:#06B6D4;opacity:.07"></div></div>
+    <div class="deco-shape" data-speed="0.035" style="width: 170px; height: 170px; bottom: 16%; right: 12%; background: radial-gradient(circle, rgb(124, 58, 237), transparent 70%); transform: translate(-1.48418px, 2.45778px);"></div>
+    <div class="content">
+      <p class="reveal mini-label mb-3" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Tail Direction</p>
+      <h2 class="reveal font-display text-[clamp(2rem,4.4vw,3.2rem)] mb-8" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">One-Tailed vs Two-Tailed Test</h2>
+      <div class="grid grid-cols-2 gap-6 items-stretch">
+        <div class="reveal glass-card hover-lift p-7 flex flex-col justify-between" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);">
+          <div><div class="text-4xl mb-4">➡️</div><h3 class="text-2xl font-semibold mb-3">One-Tailed</h3><p class="text-text-secondary leading-relaxed">H₁ specifies direction: μ &gt; μ₀ or μ &lt; μ₀. All α is placed in one tail, so the rejection region is on one side , either on left or right.</p></div>
+          <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between"><span class="chip">Directional</span><span class="text-accent-2 font-semibold">Critical Z at α=0.05 → 1.645</span></div>
+        </div>
+        <div class="reveal glass-card hover-lift p-7 flex flex-col justify-between" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);">
+          <div><div class="text-4xl mb-4">↔️</div><h3 class="text-2xl font-semibold mb-3">Two-Tailed</h3><p class="text-text-secondary leading-relaxed">H₀ says μ = μ₀ and H₁ says μ ≠ μ₀. The significance level is split equally between both tails, so extreme values on either side can reject H₀.</p></div>
+          <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between"><span class="chip">Non-directional</span><span class="text-accent-2 font-semibold">Critical Z at α=0.05 → ±1.96</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-6" data-slide="6">
+    <div class="gradient-mesh"><div class="blob" style="width:480px;height:480px;top:-120px;right:-100px;background:#7C3AED;opacity:.14"></div><div class="blob" style="width:320px;height:320px;bottom:-70px;left:-40px;background:#06B6D4;opacity:.10"></div><div class="blob" style="width:190px;height:190px;top:48%;left:18%;background:#A78BFA;opacity:.09"></div></div>
+    <canvas class="particle-canvas-ambient" style="position:absolute;inset:0;z-index:1" width="300" height="150"></canvas>
+    <div class="content text-center">
+      <p class="reveal mini-label mb-4" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Section 04</p>
+      <h2 class="reveal font-display text-[clamp(2.6rem,6vw,4.6rem)] mb-4 text-glow" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">Type I &amp; Type II Errors</h2>
+      <p class="reveal text-[clamp(1rem,1.8vw,1.3rem)] text-text-secondary tracking-wide" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);">The cost of wrong decisions</p>
+    </div>
+  </section>
+
+  <section class="slide slide-7" data-slide="7">
+    <div class="gradient-mesh"><div class="blob" style="width:320px;height:320px;top:-70px;left:-60px;background:#06B6D4;opacity:.08"></div><div class="blob" style="width:260px;height:260px;bottom:-40px;right:-10px;background:#7C3AED;opacity:.08"></div></div>
+    <div class="deco-shape" data-speed="0.04" style="width: 160px; height: 160px; top: 20%; right: 12%; background: radial-gradient(circle, rgb(167, 139, 250), transparent 70%); transform: translate(-1.6962px, 2.80889px);"></div>
+    <div class="content">
+      <p class="reveal mini-label mb-3" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Error Logic</p>
+      <h2 class="reveal font-display text-[clamp(2rem,4.3vw,3.1rem)] mb-8" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">Type I &amp; Type II Errors</h2>
+      <div class="grid grid-cols-2 gap-5">
+        <div class="reveal glass-card hover-lift p-6 card-accent-violet" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);"><h3 class="text-xl font-semibold mb-2">Type I Error (α)</h3><p class="text-text-secondary">Reject H₀ when it's TRUE. False positive. Probability = α.</p></div>
+        <div class="reveal glass-card hover-lift p-6 card-accent-cyan" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);"><h3 class="text-xl font-semibold mb-2">Type II Error (β)</h3><p class="text-text-secondary">Fail to reject H₀ when it's FALSE. False negative. Probability = β.</p></div>
+        <!-- <div class="reveal glass-card hover-lift p-6 card-accent-purple" style="transition: opacity 0.38s 0.32s, transform 0.38s 0.32s; opacity: 1; transform: translateY(0px);"><h3 class="text-xl font-semibold mb-2">Power of Test</h3><p class="text-text-secondary">Power = 1 − β. Probability of correctly rejecting a false H₀.</p></div> -->
+        <!-- <div class="reveal glass-card hover-lift p-6 card-accent-violet" style="transition: opacity 0.38s 0.4s, transform 0.38s 0.4s; opacity: 1; transform: translateY(0px);"><h3 class="text-xl font-semibold mb-2">Trade-off</h3><p class="text-text-secondary">Lowering α reduces Type I error but can increase β. Larger sample size helps reduce both.</p></div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-8" data-slide="8">
+    <div class="gradient-mesh"><div class="blob" style="width:330px;height:330px;top:-80px;right:-50px;background:#06B6D4;opacity:.08"></div><div class="blob" style="width:250px;height:250px;bottom:-55px;left:-20px;background:#A78BFA;opacity:.08"></div></div>
+    <div class="deco-shape" data-speed="0.03" style="width: 180px; height: 180px; top: 18%; left: 54%; background: radial-gradient(circle, rgb(6, 182, 212), transparent 70%); transform: translate(-1.27215px, 2.10667px);"></div>
+    <div class="content">
+      <p class="reveal mini-label mb-3" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Test Selection</p>
+      <h2 class="reveal font-display text-[clamp(2rem,4.4vw,3.2rem)] mb-8" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">Z-Test vs T-Test</h2>
+      <div class="grid grid-cols-2 gap-6">
+        <div class="reveal glass-card hover-lift p-7 flex flex-col gap-4" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);"><div class="text-4xl">📐</div><h3 class="text-2xl font-semibold">Z-Test</h3><p class="text-text-secondary">Large sample size, usually n &gt;= 25 and population variance σ is known. Uses the standard normal distribution.</p><div class="formula">z = (x̄ − μ₀) / (σ / √n)</div><div><span class="chip">Known σ</span></div></div>
+        <div class="reveal glass-card hover-lift p-7 flex flex-col gap-4" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);"><div class="text-4xl">📏</div><h3 class="text-2xl font-semibold">T-Test</h3><p class="text-text-secondary">Small sample size, usually n &lt; 25 and population variance is σ unknown. Uses the t-distribution.</p><div class="formula">t = (x̄ − μ₀) / (s / √n)</div><div><span class="chip">Unknown σ</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-9" data-slide="9">
+    <div class="gradient-mesh"><div class="blob" style="width:300px;height:300px;top:-70px;left:-40px;background:#7C3AED;opacity:.09"></div><div class="blob" style="width:240px;height:240px;bottom:-50px;right:-30px;background:#06B6D4;opacity:.07"></div></div>
+    <div class="deco-shape" data-speed="0.025" style="width: 150px; height: 150px; top: 16%; right: 14%; background: radial-gradient(circle, rgb(167, 139, 250), transparent 70%); transform: translate(-1.06013px, 1.75556px);"></div>
+    <div class="content">
+      <p class="reveal mini-label mb-3" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">Sample Structures</p>
+      <h2 class="reveal font-display text-[clamp(2rem,4.4vw,3.15rem)] mb-8" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">One-Sample &amp; Two-Sample Tests</h2>
+      <div class="grid grid-cols-[1.5fr_.95fr] gap-6 items-stretch">
+        <div>
+          <div class="grid grid-cols-2 gap-5 mb-5">
+            <div class="reveal glass-card hover-lift p-5" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);"><div class="text-3xl mb-3">🎯</div><h3 class="text-xl font-semibold mb-2">One-Sample</h3><p class="text-sm text-text-secondary">When we have only one group and we compare its mean (sample mean) with a known value, usually the population mean.</p></div>
+            <div class="reveal glass-card hover-lift p-5" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);"><div class="text-3xl mb-3">⚖️</div><h3 class="text-xl font-semibold mb-2">Independent Two-Sample</h3><p class="text-sm text-text-secondary">Compare means of two unrelated or different groups.</p></div>
+            
+          </div>
+          <div class="reveal glass-card p-5 text-text-secondary" style="transition: opacity 0.38s 0.32s, transform 0.38s 0.32s; opacity: 1; transform: translateY(0px);">Example: One-sample asks whether average score ≠ 75, while a two-sample test can compare Method A vs Method B.</div>
+        </div>
+        <div class="reveal glass-card p-6 flex flex-col justify-center items-center text-center" style="transition: opacity 0.38s 0.4s, transform 0.38s 0.4s; opacity: 1; transform: translateY(0px);">
+          <div class="donut-wrap relative w-[180px] h-[180px] mb-5">
+            <svg viewBox="0 0 100 100" class="w-full h-full -rotate-90">
+              <circle cx="50" cy="50" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="10" fill="none"></circle>
+              <circle class="donut-ring" data-percent="67" cx="50" cy="50" r="40" stroke="url(#grad1)" stroke-width="10" fill="none" style="stroke-dashoffset: 82.929; transition: stroke-dashoffset 0.9s;"></circle>
+              <defs><lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7C3AED"></stop><stop offset="100%" stop-color="#06B6D4"></stop></lineargradient></defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center flex-col"><div class="text-3xl font-black">1 vs 2</div><div class="text-xs text-text-muted uppercase tracking-[0.2em] mt-1">Sample setups</div></div>
+          </div>
+          <p class="text-sm text-text-secondary"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-10" data-slide="10">
+    <div class="gradient-mesh">
+      <div class="blob" style="width:520px;height:520px;top:-120px;left:-100px;background:#7C3AED;opacity:.16"></div>
+      <div class="blob" style="width:360px;height:360px;bottom:-80px;right:-60px;background:#06B6D4;opacity:.12"></div>
+      <div class="blob" style="width:240px;height:240px;top:32%;right:20%;background:#A78BFA;opacity:.10"></div>
+    </div>
+    <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1" width="300" height="150"></canvas>
+    <div class="content text-center">
+      <div class="reveal text-[100px] mb-4 emoji-float" style="transition: opacity 0.38s, transform 0.38s; opacity: 1; transform: translateY(0px);">✅</div>
+      <p class="reveal mini-label mb-3" style="transition: opacity 0.38s 0.08s, transform 0.38s 0.08s; opacity: 1; transform: translateY(0px);">Closing</p>
+      <h2 class="reveal font-display text-[clamp(2.6rem,6vw,4.7rem)] mb-4 bg-linear-to-r from-accent-3 via-accent-2 to-accent-1 bg-clip-text text-transparent" style="transition: opacity 0.38s 0.16s, transform 0.38s 0.16s; opacity: 1; transform: translateY(0px);">Key Takeaways</h2>
+      <p class="reveal text-[clamp(1rem,1.8vw,1.25rem)] text-text-secondary max-w-[860px] mx-auto mb-8" style="transition: opacity 0.38s 0.24s, transform 0.38s 0.24s; opacity: 1; transform: translateY(0px);">Hypothesis testing is a rigorous framework to make evidence-based decisions from sample data.</p>
+      <div class="reveal flex flex-wrap justify-center gap-3 max-w-[920px] mx-auto" style="transition: opacity 0.38s 0.32s, transform 0.38s 0.32s; opacity: 1; transform: translateY(0px);">
+        <span class="chip">Define H₀ and H₁ clearly</span>
+        <span class="chip">Set α before collecting data</span>
+        <span class="chip">Match tail direction to H₁</span>
+        <span class="chip">Understand Type I &amp; II error </span>
+        <span class="chip">Use Z when σ known, T when unknown</span>
+        <span class="chip">Choose test structure based on samples</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="nav-controls" aria-label="Slide navigation">
+  <button class="nav-btn" aria-label="Previous slide" onclick="changeSlide(-1)">‹</button>
+  <div class="slide-dots" id="dots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <button class="nav-btn" aria-label="Next slide" onclick="changeSlide(1)">›</button>
+  <span class="slide-counter" id="counter">1 / 10</span>
+</div>
+
+<script>
+let current = 1;
+const total = document.querySelectorAll('.slide').length;
+const dotsContainer = document.getElementById('dots');
+const counter = document.getElementById('counter');
+for (let i = 1; i <= total; i++) { const dot = document.createElement('div'); dot.className = 'dot' + (i === 1 ? ' active' : ''); dot.onclick = () => goToSlide(i); dotsContainer.appendChild(dot); }
+function goToSlide(n) {
+  const prev = document.querySelector('.slide.active');
+  const next = document.querySelector(`.slide[data-slide="${n}"]`);
+  if (prev) prev.classList.remove('active');
+  if (next) { next.classList.add('active'); animateSlide(next); }
+  current = n; updateNav();
+}
+function changeSlide(dir) { let next = current + dir; if (next < 1) next = total; if (next > total) next = 1; goToSlide(next); }
+function updateNav() { document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i + 1 === current)); counter.textContent = current + ' / ' + total; }
+document.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); changeSlide(1); } if (e.key === 'ArrowLeft') { e.preventDefault(); changeSlide(-1); } });
+let touchStartX = 0;
+document.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
+document.addEventListener('touchend', (e) => { const diff = touchStartX - e.changedTouches[0].clientX; if (Math.abs(diff) > 50) changeSlide(diff > 0 ? 1 : -1); });
+function animateSlide(slide) {
+  slide.querySelectorAll('.reveal').forEach((el, i) => {
+    el.style.transition = 'none'; el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.offsetHeight;
+    const delay = i * 0.08;
+    el.style.transition = `opacity 0.38s ease ${delay}s, transform 0.38s ease ${delay}s`;
+    el.style.opacity = '1'; el.style.transform = 'translateY(0px)';
+  });
+  animateSlideEffects(slide);
+}
+function animateSlideEffects(slide) {
+  slide.querySelectorAll('.bar-fill').forEach((bar, i) => {
+    bar.style.width = '0%';
+    bar.style.transition = `width 0.55s ease ${i * 0.08}s`;
+    bar.offsetHeight;
+    bar.style.width = bar.dataset.width + '%';
+  });
+  slide.querySelectorAll('.donut-ring').forEach(ring => {
+    ring.style.strokeDashoffset = '251.3';
+    ring.style.transition = 'stroke-dashoffset 0.9s ease';
+    ring.offsetHeight;
+    ring.style.strokeDashoffset = 251.3 - (parseInt(ring.dataset.percent) / 100) * 251.3;
+  });
+}
+document.addEventListener('mousemove', (e) => {
+  const spotlight = document.querySelector('.mouse-spotlight');
+  if (spotlight) spotlight.style.background = `radial-gradient(560px circle at ${e.clientX}px ${e.clientY}px, rgba(124,58,237,0.08), transparent 40%)`;
+});
+(function() {
+  let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+  const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+  document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
+  (function tick() {
+    const ox = (mouseX - cx) / cx, oy = (mouseY - cy) / cy;
+    document.querySelectorAll('.deco-shape').forEach(shape => {
+      const speed = parseFloat(shape.dataset.speed) || 0.03;
+      shape.style.transform = `translate(${ox * speed * 100}px, ${oy * speed * 100}px)`;
+    });
+    requestAnimationFrame(tick);
+  })();
+})();
+window.initParticles = function(canvas, options) {
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const resize = () => { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; };
+  resize(); window.addEventListener('resize', resize);
+  const interactive = options.interactive !== false;
+  const count = options.count || (interactive ? 55 : 18);
+  let mx = -1000, my = -1000;
+  const particles = Array.from({ length: count }, () => ({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, vx: (Math.random() - 0.5) * 0.28, vy: (Math.random() - 0.5) * 0.28, size: Math.random() * 2.4 + 0.8, alpha: Math.random() * 0.35 + 0.08 }));
+  if (interactive) {
+    canvas.addEventListener('mousemove', (e) => { const rect = canvas.getBoundingClientRect(); mx = e.clientX - rect.left; my = e.clientY - rect.top; });
+    canvas.addEventListener('mouseleave', () => { mx = -1000; my = -1000; });
+  }
+  (function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      if (interactive) {
+        const dx = p.x - mx, dy = p.y - my, dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        if (dist < 120) { const force = (120 - dist) / 120 * 2; p.vx += (dx / dist) * force * 0.08; p.vy += (dy / dist) * force * 0.08; }
+      }
+      p.vx *= 0.985; p.vy *= 0.985; p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = canvas.width; if (p.x > canvas.width) p.x = 0; if (p.y < 0) p.y = canvas.height; if (p.y > canvas.height) p.y = 0;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2); ctx.fillStyle = `rgba(124,58,237,${p.alpha})`; ctx.fill();
+    });
+    requestAnimationFrame(animate);
+  })();
+};
+document.querySelectorAll('.particle-canvas').forEach(c => window.initParticles(c, { interactive: true, count: 55 }));
+document.querySelectorAll('.particle-canvas-ambient').forEach(c => window.initParticles(c, { interactive: false, count: 18 }));
+try { animateSlide(document.querySelector('.slide.active')); } catch(e) { console.warn(e); }
+</script>
+
+
+</body></html>
